@@ -41,12 +41,14 @@ body{
     border-radius: 2vh;
     margin-bottom: -4vh;
     z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 #panel{
     background-color:var(--panel-color) ;
     width: 50vh;
     height: 70vh;
     border-radius: 2vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 #buttons{
     display: grid;
@@ -58,6 +60,7 @@ body{
 }
 .button{
     font-family: 'Comic Sans MS';
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     font-size: 6vh;
     text-align: center;
     display: flex;
@@ -65,10 +68,16 @@ body{
     flex-direction: column;
     background-color: var(--but-color);
     color: var(--text-color);
-    border-radius: 20px;
+    border-radius: 2vh;
     width: 10vh;
     height: 10vh;
     border: none;
+}
+img{
+    padding: 1vh ;
+    width: 10vh;
+    height: 10vh;
+    border-radius:4vh;
 }
 @media (max-width: 480px) {
     body{
@@ -118,5 +127,11 @@ body{
         height: 12vh;
         border: none;
         margin: 0.1vh;
+    }
+    img{
+        padding: 2vh ;
+        width: 10vh;
+        height: 10vh;
+        border-radius:4vh;
     }
 }
