@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #edede9;
+    --panel-color: #d6ccc2;
+    --but-color: #f5ebe0;
+   --text-color: #1b1b1e;
+    
+}
+.dark{
+    --bg-color: #0b090a;
+    --panel-color: #660708;
+     --but-color: #161a1d;
+     --text-color: #f5f3f4;
+        
+}
+.sea{
+    --bg-color: #00296b;
+    --panel-color: #003f88;
+    --but-color: #00509d;
+    --text-color: #ffd500;
+}
+.forest{
+
+}
+body{
+    background-color:  var(--bg-color);
+    height: 100%;
+    margin-top: 10vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Comic Sans MS';
+}
+#result{
+    background-color: var(--but-color);
+    width: 50vh;
+    height: 15vh;
+    border-radius: 2vh;
+    margin-bottom: -4vh;
+    z-index: 1;
+}
+#panel{
+    background-color:var(--panel-color) ;
+    width: 50vh;
+    height: 70vh;
+    border-radius: 2vh;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    padding: 2vh;
+    padding-top: 8vh ;
+
+}
+.button{
+    font-family: 'Comic Sans MS';
+    font-size: 6vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--but-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 10vh;
+    height: 10vh;
+    border: none;
+}
+@media (max-width: 480px) {
+    body{
+        display: block;
+        margin: 0vh;
+        background-color:  var(--bg-color);
+        height: 100%;
+        overflow: hidden;
+        font-family: 'Comic Sans MS';
+    }
+    #result{ 
+        background-color: var(--but-color);
+        width: 50vh;
+        height: 30vh;
+        border-radius: 2vh;
+        
+        z-index: 1;
+    }
+    #panel{
+        background-color:var(--panel-color) ;
+        width: 50vh;
+        height: 100vh;
+        border-radius: 2vh;
+        z-index: -1;
+    }
+    #buttons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 40vh;
+        gap: 1vh;
+        padding: 0.1vh;
+        padding-top: 5vh ;
+        z-index: -1;
+        margin: 1vh;
+    }
+    .button{
+        font-family: 'Comic Sans MS';
+        font-size: 6vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--but-color);
+        color: var(--text-color);
+        border-radius: 2vh;
+        width: 10vh;
+        height: 12vh;
+        border: none;
+        margin: 0.1vh;
+    }
+}
