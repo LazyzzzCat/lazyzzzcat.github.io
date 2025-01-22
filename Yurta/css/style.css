@@ -112,7 +112,7 @@ footer p a {
 img{
   border:1px solid var(--text);
   border-radius: 20px;
-  max-width: 300px;
+  width: 50vw;
 }
 .card-body{
   background-color: var(--card);
