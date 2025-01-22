@@ -13,7 +13,7 @@
         
         let c = document.createElement("img");
         c.src = "https://http.cat/" + randomStatusCode;
-        c.setAttribute("id", "c");
+        c.setAttribute("id", "kitty");
         cat.appendChild(c);
     }
     function getRandomStatusCode() {
