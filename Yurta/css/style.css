@@ -148,7 +148,5 @@ img{
   font-size: 24px;
 }
 #c{
-  max-width: 100%;  
-  width: 50vw;     
-  height: auto;     
+  height: 50vh;     
 }
